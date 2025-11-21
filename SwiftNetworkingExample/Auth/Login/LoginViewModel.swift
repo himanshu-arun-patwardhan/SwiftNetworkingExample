@@ -14,6 +14,7 @@ import SwiftLogger
 class LoginViewModel: ObservableObject {
     @Published var networkRequestState: NetworkRequestState<LoginResponseModel> = .idle
     @Published var loggedInUserInfo: LoginResponseModel? = nil
+    private var tokenStore: TokenStoreProtocol = TokenStore.shared
     
     // MARK: - init
     private var networkService: NetworkRequestProtocol
@@ -50,8 +51,14 @@ class LoginViewModel: ObservableObject {
             )
             self.networkRequestState = .success(response)
             loggedInUserInfo = response
+            saveTokens(accessToken: response.accessToken, refreshToken: response.refreshToken)
         } catch {
             self.networkRequestState = .failure(error)
         }
+    }
+    
+    private func saveTokens(accessToken: String, refreshToken: String) {
+        tokenStore.accessToken = accessToken
+        tokenStore.refreshToken = refreshToken
     }
 }
