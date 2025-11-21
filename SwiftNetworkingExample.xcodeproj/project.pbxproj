@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		901722AA2ED00DA900B6B87A /* SwiftNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 901722A92ED00DA900B6B87A /* SwiftNetworking */; };
 		901722B02ED0108800B6B87A /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 901722AF2ED0108800B6B87A /* SwiftUIComponents */; };
+		901722B32ED02C8D00B6B87A /* SwiftUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 901722B22ED02C8D00B6B87A /* SwiftUtilities */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 			files = (
 				901722B02ED0108800B6B87A /* SwiftUIComponents in Frameworks */,
 				901722AA2ED00DA900B6B87A /* SwiftNetworking in Frameworks */,
+				901722B32ED02C8D00B6B87A /* SwiftUtilities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +123,7 @@
 			packageProductDependencies = (
 				901722A92ED00DA900B6B87A /* SwiftNetworking */,
 				901722AF2ED0108800B6B87A /* SwiftUIComponents */,
+				901722B22ED02C8D00B6B87A /* SwiftUtilities */,
 			);
 			productName = SwiftNetworkingExample;
 			productReference = 901721D42ECEC83900B6B87A /* SwiftNetworkingExample.app */;
@@ -207,6 +210,7 @@
 			packageReferences = (
 				901722A82ED00DA900B6B87A /* XCRemoteSwiftPackageReference "SwiftNetworking" */,
 				901722AE2ED0108800B6B87A /* XCRemoteSwiftPackageReference "SwiftUIComponents" */,
+				901722B12ED02C8D00B6B87A /* XCRemoteSwiftPackageReference "SwiftUtilities" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 901721D52ECEC83900B6B87A /* Products */;
@@ -601,6 +605,14 @@
 				minimumVersion = 2.0.2;
 			};
 		};
+		901722B12ED02C8D00B6B87A /* XCRemoteSwiftPackageReference "SwiftUtilities" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/himanshu-arun-patwardhan/SwiftUtilities";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -613,6 +625,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 901722AE2ED0108800B6B87A /* XCRemoteSwiftPackageReference "SwiftUIComponents" */;
 			productName = SwiftUIComponents;
+		};
+		901722B22ED02C8D00B6B87A /* SwiftUtilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 901722B12ED02C8D00B6B87A /* XCRemoteSwiftPackageReference "SwiftUtilities" */;
+			productName = SwiftUtilities;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
