@@ -8,7 +8,7 @@
 import Foundation
 
 protocol UserInfoStoreProtocol {
-    var userId: String? { get set }
+    var userId: Int? { get set }
     var username: String? { get set }
     var email: String? { get set }
     var firstName: String? { get set }

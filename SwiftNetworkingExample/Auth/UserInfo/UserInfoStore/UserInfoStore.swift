@@ -19,7 +19,7 @@ struct UserInfoStore: UserInfoStoreProtocol {
     }
     
     // MARK: -
-    var userId: String? {
+    var userId: Int? {
         get { storage.get(forKey: UserInfoStoreKeys.userId) }
         set { storage.set(newValue, forKey: UserInfoStoreKeys.userId) }
     }
