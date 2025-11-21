@@ -14,6 +14,7 @@ import SwiftLogger
 class LoginViewModel: ObservableObject {
     @Published var networkRequestState: NetworkRequestState<LoginResponseModel> = .idle
     @Published var loggedInUserInfo: LoginResponseModel? = nil
+    ///
     private var tokenStore: TokenStoreProtocol = TokenStore.shared
     
     // MARK: - init
@@ -21,7 +22,6 @@ class LoginViewModel: ObservableObject {
     init(networkService: NetworkRequestProtocol = NetworkRequestManager()) {
         self.networkService = networkService
     }
-    
     
     // MARK: - network request
     func requestLogin(username: String, password: String) async {
