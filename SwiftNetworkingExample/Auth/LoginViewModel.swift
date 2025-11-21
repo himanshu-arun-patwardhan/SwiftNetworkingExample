@@ -13,6 +13,7 @@ import SwiftLogger
 @MainActor
 class LoginViewModel: ObservableObject {
     @Published var networkRequestState: NetworkRequestState<LoginResponseModel> = .idle
+    @Published var loggedInUserInfo: LoginResponseModel? = nil
     
     // MARK: - init
     private var networkService: NetworkRequestProtocol
@@ -48,6 +49,7 @@ class LoginViewModel: ObservableObject {
                 body: bodyData
             )
             self.networkRequestState = .success(response)
+            loggedInUserInfo = response
         } catch {
             self.networkRequestState = .failure(error)
         }
