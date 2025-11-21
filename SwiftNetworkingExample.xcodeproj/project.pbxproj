@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		901722AA2ED00DA900B6B87A /* SwiftNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 901722A92ED00DA900B6B87A /* SwiftNetworking */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		901721E42ECEC83B00B6B87A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901722AA2ED00DA900B6B87A /* SwiftNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = SwiftNetworkingExample;
 			packageProductDependencies = (
+				901722A92ED00DA900B6B87A /* SwiftNetworking */,
 			);
 			productName = SwiftNetworkingExample;
 			productReference = 901721D42ECEC83900B6B87A /* SwiftNetworkingExample.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 901721CB2ECEC83900B6B87A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				901722A82ED00DA900B6B87A /* XCRemoteSwiftPackageReference "SwiftNetworking" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 901721D52ECEC83900B6B87A /* Products */;
 			projectDirPath = "";
@@ -570,6 +579,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		901722A82ED00DA900B6B87A /* XCRemoteSwiftPackageReference "SwiftNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/himanshu-arun-patwardhan/SwiftNetworking";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		901722A92ED00DA900B6B87A /* SwiftNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 901722A82ED00DA900B6B87A /* XCRemoteSwiftPackageReference "SwiftNetworking" */;
+			productName = SwiftNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 901721CC2ECEC83900B6B87A /* Project object */;
 }
