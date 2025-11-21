@@ -5,6 +5,8 @@
 //  Created by Himanshu Patwardhan
 //
 
+import Foundation
+
 enum UserInfoStoreKeys {
     static let userId = "userId"
     static let username = "username"
