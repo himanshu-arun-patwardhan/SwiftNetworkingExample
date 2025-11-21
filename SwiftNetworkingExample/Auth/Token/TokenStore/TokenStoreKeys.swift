@@ -7,9 +7,7 @@
 
 import Foundation
 
-// MARK: -
 enum TokenStoreKeys {
     static let accessToken = "accessToken"
     static let refreshToken = "refreshToken"
 }
-
