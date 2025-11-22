@@ -25,7 +25,8 @@ struct SwiftNetworkingExampleApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            AppRootView()
         }
         .modelContainer(sharedModelContainer)
     }
