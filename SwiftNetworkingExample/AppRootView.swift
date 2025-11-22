@@ -16,7 +16,7 @@ struct AppRootView: View {
     // MARK: -
     var body: some View {
         ZStack {
-            
+            LoginUIView()
             /// global overlay view
             if let overlay = overlayManager.currentOverlay {
                 overlay
