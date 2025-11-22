@@ -5,14 +5,14 @@
 //  Created by Himanshu Arun Patwardhan
 //
 
-//import Foundation
-//import SwiftData
+import Foundation
+import SwiftData
 
-//@Model
-//final class Item {
-//    var timestamp: Date
-//    
-//    init(timestamp: Date) {
-//        self.timestamp = timestamp
-//    }
-//}
+@Model
+final class Item {
+    var timestamp: Date
+    
+    init(timestamp: Date) {
+        self.timestamp = timestamp
+    }
+}
