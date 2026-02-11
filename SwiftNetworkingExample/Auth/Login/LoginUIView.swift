@@ -77,10 +77,10 @@ extension LoginUIView {
         InputFieldView(
             text: $usernameText,
             placeholder: "username",
-            iconName: "person.circle.fill",
+            leftIcon: "person.circle.fill",
             rightButtonTitle: nil,
-            characterLimit: 15,
             onRightButtonTap: nil,
+            characterLimit: 15,
             onTextChange: { input in
                 Logger.log("on text change", level: .debug, category: .general)
                 return true
@@ -106,10 +106,10 @@ extension LoginUIView {
         InputFieldView(
             text: $passwordText,
             placeholder: "password",
-            iconName: "key.circle.fill",
+            leftIcon: "key.circle.fill",
             rightButtonTitle: nil,
-            characterLimit: 15,
             onRightButtonTap: nil,
+            characterLimit: 15,
             onTextChange: { input in
                 Logger.log("on text change", level: .debug, category: .general)
                 return true
