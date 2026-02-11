@@ -16,6 +16,7 @@ class LoginViewModel: ObservableObject {
     @Published var loggedInUserInfo: LoginResponseModel? = nil
     ///
     private var tokenStore: TokenStoreProtocol = TokenStore.shared
+    private var userInfoStore: UserInfoStoreProtocol = UserInfoStore.shared
     
     // MARK: - init
     private var networkService: NetworkRequestProtocol
@@ -52,6 +53,7 @@ class LoginViewModel: ObservableObject {
             self.networkRequestState = .success(response)
             loggedInUserInfo = response
             saveTokens(accessToken: response.accessToken, refreshToken: response.refreshToken)
+            saveUserInfo(from: response)
         } catch {
             self.networkRequestState = .failure(error)
         }
@@ -60,5 +62,15 @@ class LoginViewModel: ObservableObject {
     private func saveTokens(accessToken: String, refreshToken: String) {
         tokenStore.accessToken = accessToken
         tokenStore.refreshToken = refreshToken
+    }
+    
+    private func saveUserInfo(from response: LoginResponseModel) {
+        userInfoStore.userId = response.id
+        userInfoStore.username = response.username
+        userInfoStore.email = response.email
+        userInfoStore.firstName = response.firstName
+        userInfoStore.lastName = response.lastName
+        userInfoStore.gender = response.gender
+        userInfoStore.image = response.image
     }
 }

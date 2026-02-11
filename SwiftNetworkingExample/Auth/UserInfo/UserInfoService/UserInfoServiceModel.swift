@@ -5,6 +5,8 @@
 //  Created by Himanshu Patwardhan
 //
 
+import Foundation
+
 struct UserInfoServiceResponseModel: Decodable {
     let id: Int?
     let username: String?
