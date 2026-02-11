@@ -12,43 +12,14 @@
 		901722B32ED02C8D00B6B87A /* SwiftUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 901722B22ED02C8D00B6B87A /* SwiftUtilities */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		901721E42ECEC83B00B6B87A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 901721CC2ECEC83900B6B87A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 901721D32ECEC83900B6B87A;
-			remoteInfo = SwiftNetworkingExample;
-		};
-		901721EE2ECEC83C00B6B87A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 901721CC2ECEC83900B6B87A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 901721D32ECEC83900B6B87A;
-			remoteInfo = SwiftNetworkingExample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		901721D42ECEC83900B6B87A /* SwiftNetworkingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNetworkingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		901721E32ECEC83B00B6B87A /* SwiftNetworkingExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNetworkingExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		901721ED2ECEC83C00B6B87A /* SwiftNetworkingExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNetworkingExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		901721D62ECEC83900B6B87A /* SwiftNetworkingExample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SwiftNetworkingExample;
-			sourceTree = "<group>";
-		};
-		901721E62ECEC83B00B6B87A /* SwiftNetworkingExampleTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftNetworkingExampleTests;
-			sourceTree = "<group>";
-		};
-		901721F02ECEC83C00B6B87A /* SwiftNetworkingExampleUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftNetworkingExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -64,20 +35,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		901721E02ECEC83B00B6B87A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		901721EA2ECEC83C00B6B87A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,8 +42,6 @@
 			isa = PBXGroup;
 			children = (
 				901721D62ECEC83900B6B87A /* SwiftNetworkingExample */,
-				901721E62ECEC83B00B6B87A /* SwiftNetworkingExampleTests */,
-				901721F02ECEC83C00B6B87A /* SwiftNetworkingExampleUITests */,
 				901721D52ECEC83900B6B87A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,8 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				901721D42ECEC83900B6B87A /* SwiftNetworkingExample.app */,
-				901721E32ECEC83B00B6B87A /* SwiftNetworkingExampleTests.xctest */,
-				901721ED2ECEC83C00B6B87A /* SwiftNetworkingExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,52 +82,6 @@
 			productReference = 901721D42ECEC83900B6B87A /* SwiftNetworkingExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		901721E22ECEC83B00B6B87A /* SwiftNetworkingExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 901721FA2ECEC83C00B6B87A /* Build configuration list for PBXNativeTarget "SwiftNetworkingExampleTests" */;
-			buildPhases = (
-				901721DF2ECEC83B00B6B87A /* Sources */,
-				901721E02ECEC83B00B6B87A /* Frameworks */,
-				901721E12ECEC83B00B6B87A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				901721E52ECEC83B00B6B87A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				901721E62ECEC83B00B6B87A /* SwiftNetworkingExampleTests */,
-			);
-			name = SwiftNetworkingExampleTests;
-			packageProductDependencies = (
-			);
-			productName = SwiftNetworkingExampleTests;
-			productReference = 901721E32ECEC83B00B6B87A /* SwiftNetworkingExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		901721EC2ECEC83C00B6B87A /* SwiftNetworkingExampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 901721FD2ECEC83C00B6B87A /* Build configuration list for PBXNativeTarget "SwiftNetworkingExampleUITests" */;
-			buildPhases = (
-				901721E92ECEC83C00B6B87A /* Sources */,
-				901721EA2ECEC83C00B6B87A /* Frameworks */,
-				901721EB2ECEC83C00B6B87A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				901721EF2ECEC83C00B6B87A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				901721F02ECEC83C00B6B87A /* SwiftNetworkingExampleUITests */,
-			);
-			name = SwiftNetworkingExampleUITests;
-			packageProductDependencies = (
-			);
-			productName = SwiftNetworkingExampleUITests;
-			productReference = 901721ED2ECEC83C00B6B87A /* SwiftNetworkingExampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -187,14 +94,6 @@
 				TargetAttributes = {
 					901721D32ECEC83900B6B87A = {
 						CreatedOnToolsVersion = 26.1;
-					};
-					901721E22ECEC83B00B6B87A = {
-						CreatedOnToolsVersion = 26.1;
-						TestTargetID = 901721D32ECEC83900B6B87A;
-					};
-					901721EC2ECEC83C00B6B87A = {
-						CreatedOnToolsVersion = 26.1;
-						TestTargetID = 901721D32ECEC83900B6B87A;
 					};
 				};
 			};
@@ -218,28 +117,12 @@
 			projectRoot = "";
 			targets = (
 				901721D32ECEC83900B6B87A /* SwiftNetworkingExample */,
-				901721E22ECEC83B00B6B87A /* SwiftNetworkingExampleTests */,
-				901721EC2ECEC83C00B6B87A /* SwiftNetworkingExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		901721D22ECEC83900B6B87A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		901721E12ECEC83B00B6B87A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		901721EB2ECEC83C00B6B87A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,34 +139,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		901721DF2ECEC83B00B6B87A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		901721E92ECEC83C00B6B87A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		901721E52ECEC83B00B6B87A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 901721D32ECEC83900B6B87A /* SwiftNetworkingExample */;
-			targetProxy = 901721E42ECEC83B00B6B87A /* PBXContainerItemProxy */;
-		};
-		901721EF2ECEC83C00B6B87A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 901721D32ECEC83900B6B87A /* SwiftNetworkingExample */;
-			targetProxy = 901721EE2ECEC83C00B6B87A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		901721F52ECEC83C00B6B87A /* Debug */ = {
@@ -467,86 +323,6 @@
 			};
 			name = Release;
 		};
-		901721FB2ECEC83C00B6B87A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hap.SwiftNetworkingExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftNetworkingExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftNetworkingExample";
-			};
-			name = Debug;
-		};
-		901721FC2ECEC83C00B6B87A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hap.SwiftNetworkingExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftNetworkingExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftNetworkingExample";
-			};
-			name = Release;
-		};
-		901721FE2ECEC83C00B6B87A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hap.SwiftNetworkingExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SwiftNetworkingExample;
-			};
-			name = Debug;
-		};
-		901721FF2ECEC83C00B6B87A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hap.SwiftNetworkingExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SwiftNetworkingExample;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -564,24 +340,6 @@
 			buildConfigurations = (
 				901721F82ECEC83C00B6B87A /* Debug */,
 				901721F92ECEC83C00B6B87A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		901721FA2ECEC83C00B6B87A /* Build configuration list for PBXNativeTarget "SwiftNetworkingExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				901721FB2ECEC83C00B6B87A /* Debug */,
-				901721FC2ECEC83C00B6B87A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		901721FD2ECEC83C00B6B87A /* Build configuration list for PBXNativeTarget "SwiftNetworkingExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				901721FE2ECEC83C00B6B87A /* Debug */,
-				901721FF2ECEC83C00B6B87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
